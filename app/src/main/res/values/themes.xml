@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SplashImagenApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:fontFamily">sans</item>
+    </style>
+
+    <style name="Theme.SplashImagenApp" parent="Base.Theme.SplashImagenApp" />
+    <style name="Theme.SplashImagenApp.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">
+            @color/splash_background
+        </item>
+        <item name="windowSplashScreenAnimatedIcon">
+            @drawable/logo_splash
+        </item>
+        <item name="postSplashScreenTheme">
+            @style/Theme.SplashImagenApp
+        </item>
+    </style>
+</resources>
